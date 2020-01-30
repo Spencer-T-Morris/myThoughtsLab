@@ -9,7 +9,7 @@ import { Component, OnInit, EventEmitter, Input, Output  } from '@angular/core';
 
 export class PostComponent implements OnInit {
   @Input() title: string
-  @Input() thought: boolean
+  @Input() thought: string
   @Output() delete = new EventEmitter<boolean>();
   constructor() { }
   
@@ -17,6 +17,7 @@ export class PostComponent implements OnInit {
     this.delete.emit();
   }
   ngOnInit() {
+    
   }
  
 }

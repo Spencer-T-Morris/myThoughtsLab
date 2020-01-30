@@ -1,7 +1,7 @@
-body{
-	background-color:#B1DDEA
+.post-container{
+	background-color:#B1DDEA;
 }
-Button {
+Button{
 	box-shadow: 0px 1px 0px 0px #0d0a01;
 	background:linear-gradient(to bottom, #b3ac98 5%, #8a826d 100%);
 	background-color:#b3ac98;
@@ -23,4 +23,23 @@ Button:hover {
 Button:active {
 	position:relative;
 	top:1px;
+}
+.post-container{
+	text-align: center;
+}
+input{
+	width: 75%;
+	border-radius:15%;
+	border-width: 5px;
+	border-color: #64a8bd;
+	border-style: groove;
+	text-align: center;
+}
+.title-input-form{
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.thought-input-form{
+	padding-top: 3%;
+	padding-bottom: 3%;
 }

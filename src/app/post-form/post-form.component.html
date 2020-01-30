@@ -1,12 +1,12 @@
 <div class="post-container">
     <div class="title-form">
         <h2>Title</h2>
-        <input ng-model="title.value" ng-bind="title" #title  type="text" placeholder="what is the title of your thought">
+        <input class="title-input-form" [(ngModel)]="newTitle"   type="text" placeholder="what is the title of your thought">
     </div>
 
     <div class="thought-form">
         <h3>Thought</h3>
-        <input ng-model="thought.value" ng-bind="thought" #thought  type="text" placeholder="insert your thought">
+        <input class="thought-input-form" [(ngModel)]="idea"  type="text" placeholder="insert your thought">
     </div>
-    <button class="add-thought" (click)="addThought(title.value, thought.value)"(click)="onSubmit()">Add Thought</button>
+    <button class="add-thought" (click)="addThought()">Add Thought</button>
 </div>

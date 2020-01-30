@@ -7,11 +7,11 @@
         <h1>My thoughts</h1>
     </div>
     <div class="content-container">
-        <button class="createThought" ng-model="app-post-form">New Thought</button>
+        <button class="createThought" ng-model="app-post-form" (click)="appear()">New Thought</button>
         <div class="content">
-            <app-post  ></app-post>
+            <app-post *ngFor="let thoughts of thoughtsList" [title]="thoughts.title" [thought]="thoughts.thought"></app-post>
         </div>
-        <app-post-form></app-post-form>
+        <app-post-form *ngIf="show" (newThought)="addThought($event)" ></app-post-form>
     </div>
 </div>
 
